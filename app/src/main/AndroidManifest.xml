@@ -20,7 +20,7 @@
             android:exported="false" />
         <activity
             android:name=".ThirdBirdActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SecondBirdActivity"
             android:exported="false" />

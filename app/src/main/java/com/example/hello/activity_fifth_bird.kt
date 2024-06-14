@@ -6,16 +6,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.hello.databinding.ActivityFifthBirdBinding
 
 class activity_fifth_bird : AppCompatActivity() {
+    lateinit var binding: ActivityFifthBirdBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_fifth_bird)
-        val btnPrev5 = findViewById<ImageView>(R.id.btnPrev5)
-        btnPrev5.setOnClickListener {
+        binding = ActivityFifthBirdBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.btnPrev5.setOnClickListener {
             finish()
-
         }
         }
     }
